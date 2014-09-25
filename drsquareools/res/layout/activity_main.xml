@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.dr.drools.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"  >
+
+
+
+    
+
+   <EditText
+        android:id="@+id/balance"
+         android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="@string/balance"
+        android:ems="10"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/fire"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rules"
+        />
+    <TextView
+        android:id="@+id/message" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/r1" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/r2" />
+ 
+    </RadioGroup>
+    
+
+    <EditText
+        android:id="@+id/rule_editor"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+</LinearLayout>
+

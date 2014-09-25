@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">drsquareools</string>
+    <string name="hello_world"> </string>
+    <string name="progress">Building Knowledge...</string>
+    <string name="action_settings">Settings</string>
+    <string name="rules">Fire Rules</string>
+    <string name="balance">enter balance value</string>
+    <string name="r1">Edit rule1.drl</string>
+    <string name="r2">Edit rule2.drl</string>
+    <string name="error_number">input a valid number please!</string>
+    
+    
+</resources>

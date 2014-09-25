@@ -1,0 +1,8 @@
+package mx.dr.drools;
+
+rule "rule more"
+ when 
+  $account : Account (balance >=100)
+ then 
+  $account.setMessage("more than 100");
+end

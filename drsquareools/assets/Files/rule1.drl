@@ -1,0 +1,8 @@
+package mx.dr.drools;
+
+rule "basic rule"
+ when
+  $account : Account (balance < 100) 
+ then 
+  $account.setMessage("less than 100");
+end 
