@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">drdrools</string>
+    <string name="hello_world"> </string>
+    <string name="progress">Cargando conocimiento...</string>
+    <string name="action_settings">Settings</string>
+    <string name="rules">Disparar reglas</string>
+    <string name="balance">digita un valor del balance</string>
+    <string name="r1">Editar rule1.drl</string>
+    <string name="r2">Editar rule2.drl</string>
+    <string name="error_number">introduce un número valido!</string>
+    
+    
+</resources>

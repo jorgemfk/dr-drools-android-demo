@@ -2,13 +2,10 @@ package mx.dr.drools;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import mx.dr.drools.conf.DRKnowledgeBuilder;
@@ -50,15 +47,7 @@ public class MainActivity extends ActionBarActivity {
 			return;
 		}
 	   
-		/*List<Object> facts = new ArrayList<Object>();
-        Account account= new Account();
-        account.setBalance(60);
-        facts.add(account);
-
-		StatelessKnowledgeSession ksession=base.newStatelessKnowledgeSession();
-
-		ksession.execute(facts);*/
-		
+	
 		Button button= (Button) findViewById(R.id.fire);
 		button.setOnClickListener(new OnClickListener(){
 			public void onClick(View v){
@@ -84,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onCheckedChanged(RadioGroup arg0, int arg1) {
 				  RadioButton radioButton = (RadioButton) findViewById(arg1);
-				  String rulename=radioButton.getText().toString().replaceFirst("Edit ", "");
+				  String rulename=radioButton.getText().toString().replaceFirst("Edit(ar|) ", "");
 				  writeRule(rulename.endsWith("1.drl")?"rule2.drl":"rule1.drl");
 			      loadRule(rulename);
 				
@@ -193,7 +182,7 @@ public class MainActivity extends ActionBarActivity {
 			RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
 		    int selectedId = radioGroup.getCheckedRadioButtonId();
 			RadioButton radioButton = (RadioButton) findViewById(selectedId);
-			String rulename=radioButton.getText().toString().replaceFirst("Edit ", "");
+			String rulename=radioButton.getText().toString().replaceFirst("Edit(ar|) ", "");
 			writeRule(rulename);
 			List<Account> facts = new ArrayList<Account>();
 	        	        facts.add(arg0[0]);
