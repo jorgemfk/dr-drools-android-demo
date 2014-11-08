@@ -79,25 +79,7 @@ public class MainActivity extends ActionBarActivity {
 				
 			}
 		});
-		/*btnDisplay = (Button) findViewById(R.id.btnDisplay);
-	 
-		btnDisplay.setOnClickListener(new OnClickListener() {
-	 
-			@Override
-			public void onClick(View v) {
-	 
-			        // get selected radio button from radioGroup
-				int selectedId = radioSexGroup.getCheckedRadioButtonId();
-	 
-				// find the radiobutton by returned id
-			        radioSexButton = (RadioButton) findViewById(selectedId);
-	 
-				Toast.makeText(MyAndroidAppActivity.this,
-					radioSexButton.getText(), Toast.LENGTH_SHORT).show();
-	 
-			}
-	 
-		});*/
+		
 	 
 
 	}
